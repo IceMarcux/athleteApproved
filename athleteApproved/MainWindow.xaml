@@ -1,0 +1,40 @@
+﻿<Window x:Class="athleteApproved.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:athleteApproved"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1028">
+    <Window.Background>
+        <ImageBrush ImageSource="/dashboard.png" Stretch="None"/>
+    </Window.Background>
+    <Grid Margin="10,13,0,-3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="96*"/>
+            <RowDefinition Height="121*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Label Content="LOG IN AS" HorizontalAlignment="Center" Margin="0,261,0,0" VerticalAlignment="Top" Foreground="#FF363636" Width="234" FontFamily="Rockwell Extra Bold" FontSize="40"/>
+        <Button x:Name="userClick" Content="USER" HorizontalAlignment="Left" Height="61" Margin="311,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="164" Background="#FFEE4848" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="userClick_Click">
+
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="ownerClick" Content="OWNER" HorizontalAlignment="Left" Height="61" Margin="530,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="164" Background="#FFEE4848" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="ownerClick_Click">
+
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="DON'T HAVE AN ACCOUNT?" HorizontalAlignment="Left" Margin="384,330,0,0" Grid.Row="1" VerticalAlignment="Top" Width="189" Foreground="#FF363636" FontFamily="Rockwell Condensed" FontSize="18"/>
+        <Button Content="SIGN UP" HorizontalAlignment="Left" Height="27" Margin="552,332,0,0" Grid.Row="1" VerticalAlignment="Top" Width="66" Foreground="#FF4D53DD" FontFamily="Rockwell Condensed" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1"/>
+    </Grid>
+</Window>
