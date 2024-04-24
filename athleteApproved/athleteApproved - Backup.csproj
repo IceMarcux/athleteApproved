@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="COURT PROCESS.png" />
+    <None Remove="dashboard.png" />
+    <None Remove="LAHAT NG GANTO.png" />
+    <None Remove="user.png" />
+    <None Remove="USER_OWNER_SIGNUP.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="COURT PROCESS.png" />
+    <Resource Include="dashboard.png" />
+    <Resource Include="LAHAT NG GANTO.png" />
+    <Resource Include="user.png" />
+    <Resource Include="USER_OWNER_SIGNUP.png" />
+  </ItemGroup>
+
+</Project>

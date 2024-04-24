@@ -10,22 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace athleteApproved
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for USER_FEEDBACK.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class USER_FEEDBACK : Window
     {
-        public Page1()
+        public USER_FEEDBACK()
         {
             InitializeComponent();
         }
 
-        private void feedbackBtn_Click(object sender, RoutedEventArgs e)
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
 
         }

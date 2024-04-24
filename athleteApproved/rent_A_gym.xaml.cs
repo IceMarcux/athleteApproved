@@ -15,27 +15,27 @@ using System.Windows.Shapes;
 namespace athleteApproved
 {
     /// <summary>
-    /// Interaction logic for logInUser.xaml
+    /// Interaction logic for rent_A_gym.xaml
     /// </summary>
-    public partial class logInUser : Window
+    public partial class rent_A_gym : Window
     {
-        public logInUser()
+        public rent_A_gym()
         {
             InitializeComponent();
         }
 
-        private void backButton_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow objMainWindow = new MainWindow();
-            this.Visibility = Visibility.Hidden;
-            objMainWindow.Show();
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            rent_A_gym objrent_A_gym = new rent_A_gym();
+            USER_Rental objUSER_Rental = new USER_Rental();
             this.Visibility = Visibility.Hidden;
-            objrent_A_gym.Show();
+            objUSER_Rental.Show();
+        }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            logInUser objlogInUser = new logInUser();
+            this.Visibility = Visibility.Hidden;
+            objlogInUser.Show();
         }
     }
 }
