@@ -31,7 +31,7 @@
 
         </TextBox>
         <Label Content="PASSWORD" HorizontalAlignment="Left" Height="44" Margin="318,322,0,0" VerticalAlignment="Top" Width="177" FontFamily="Rockwell Condensed" FontSize="25"/>
-        <Button Content="CONTINUE" HorizontalAlignment="Left" Height="53" Margin="390,441,0,0" VerticalAlignment="Top" Width="240" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="32" Click="Button_Click">
+        <Button x:Name="continueBtn" Content="CONTINUE" HorizontalAlignment="Left" Height="53" Margin="390,441,0,0" VerticalAlignment="Top" Width="240" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="32" Click="continueBtn_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>

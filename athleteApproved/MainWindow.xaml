@@ -18,7 +18,7 @@
             <ImageBrush/>
         </Grid.Background>
         <Label Content="LOG IN AS" HorizontalAlignment="Center" Margin="0,261,0,0" VerticalAlignment="Top" Foreground="#FF363636" Width="234" FontFamily="Rockwell Extra Bold" FontSize="40"/>
-        <Button x:Name="userClick" Content="OWNER" HorizontalAlignment="Left" Height="61" Margin="311,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="164" Background="#FFEE4848" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="userClick_Click">
+        <Button x:Name="userClick" Content="USER" HorizontalAlignment="Left" Height="61" Margin="311,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="164" Background="#FFEE4848" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="userClick_Click">
 
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -26,7 +26,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="ownerClick" Content="USER" HorizontalAlignment="Left" Height="61" Margin="530,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="164" Background="#FFEE4848" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="ownerClick_Click">
+        <Button x:Name="ownerClick" Content="OWNER" HorizontalAlignment="Left" Height="61" Margin="530,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="164" Background="#FFEE4848" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="ownerClick_Click">
 
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">

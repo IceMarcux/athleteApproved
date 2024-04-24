@@ -31,7 +31,7 @@ namespace athleteApproved
             objMainWindow.Show();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void continueBtn_Click(object sender, RoutedEventArgs e)
         {
             rent_A_gym objrent_A_gym = new rent_A_gym();
             this.Visibility = Visibility.Hidden;

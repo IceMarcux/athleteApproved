@@ -24,14 +24,20 @@ namespace athleteApproved
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        private void reviewBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void rentBtn_Click(object sender, RoutedEventArgs e)
         {
             USER_Rental objUSER_Rental = new USER_Rental();
             this.Visibility = Visibility.Hidden;
             objUSER_Rental.Show();
         }
 
-        private void backButton_Click(object sender, RoutedEventArgs e)
+        private void backBtn_Click(object sender, RoutedEventArgs e)
         {
             logInUser objlogInUser = new logInUser();
             this.Visibility = Visibility.Hidden;

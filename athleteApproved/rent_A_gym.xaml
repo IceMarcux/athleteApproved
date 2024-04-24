@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:athleteApproved"
         mc:Ignorable="d"
-        Title="rent_A_gym" Height="450" Width="800" Background="{x:Null}" Foreground="{x:Null}">
+        Title="rent_A_gym" Height="450" Width="800" Foreground="{x:Null}">
+    <Window.Background>
+        <ImageBrush ImageSource="/RENTAL.png"/>
+    </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -23,19 +26,18 @@
         <Label Content="NAME:" HorizontalAlignment="Left" Margin="33,241,0,0" VerticalAlignment="Top" FontFamily="Rockwell"/>
         <Label Content="RENT A GYM" HorizontalAlignment="Left" Margin="281,125,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="24" Foreground="#FFEE4848"/>
         <Label Content="1" HorizontalAlignment="Left" Margin="270,184,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="24" Foreground="#FF363535"/>
-        <Rectangle Stroke="Black" Margin="297,175,419,202"/>
         <Label Content="MAPUA GYMNASIUM" HorizontalAlignment="Left" Margin="378,168,0,0" VerticalAlignment="Top" FontFamily="Rockwell" FontSize="16" FontWeight="Bold"/>
         <Label Content="ADDRESS: 658 Muralla St, Intramuros, Manila, 1002 Metro Manila" HorizontalAlignment="Left" Margin="381,184,0,0" VerticalAlignment="Top" FontFamily="Rockwell" FontSize="10"/>
         <Label Content="OPERATING HOURS: 8am - 10pm" HorizontalAlignment="Left" Margin="381,195,0,0" VerticalAlignment="Top" FontFamily="Rockwell" FontSize="10"/>
         <Label Content="RENTAL FEE: 300 pesos per hour" HorizontalAlignment="Left" Margin="381,0,0,0" VerticalAlignment="Center" FontFamily="Rockwell" FontSize="10"/>
-        <Button Content="RENT" HorizontalAlignment="Left" Height="33" Margin="693,184,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click" Background="#FFEE4848" BorderBrush="{x:Null}" Foreground="#FFDFDFDF" FontSize="20" FontFamily="Rockwell" FontWeight="Bold">
+        <Button x:Name="rentBtn" Content="RENT" HorizontalAlignment="Left" Height="33" Margin="693,184,0,0" VerticalAlignment="Top" Width="76" Background="#FFEE4848" BorderBrush="{x:Null}" Foreground="#FFDFDFDF" FontSize="20" FontFamily="Rockwell" FontWeight="Bold" Click="rentBtn_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="backButton" Content="&lt;" HorizontalAlignment="Left" Height="42" Margin="31,366,0,0" VerticalAlignment="Top" Width="51" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="24" Click="backButton_Click">
+        <Button x:Name="backBtn" Content="&lt;" HorizontalAlignment="Left" Height="42" Margin="31,366,0,0" VerticalAlignment="Top" Width="51" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="24" Click="backBtn_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -43,7 +45,18 @@
             </Button.Resources>
         </Button>
         <TextBox HorizontalAlignment="Left" Height="14" Margin="40,297,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150" FontSize="9"/>
-        <Label Content="REVIEWS" HorizontalAlignment="Left" Margin="702,214,0,0" VerticalAlignment="Top" FontFamily="Rockwell" FontWeight="Bold" FontSize="10" Foreground="#FFEE4848"/>
+        <Button x:Name="courtImg" Content="" HorizontalAlignment="Left" Height                       ="56" Margin="293,172,0,0" VerticalAlignment="Top" Width="88" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" BorderBrush="{x:Null}">
+
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="/Mapua_ volleyball court1.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="reviewBtn" Content="REVIEWS" HorizontalAlignment="Left" Height="21" Margin="688,213,0,0" VerticalAlignment="Top" Width="86" FontFamily="Rockwell" FontSize="10" BorderBrush="{x:Null}" Foreground="#FFEE4848" Background="{x:Null}" Click="reviewBtn_Click"/>
 
     </Grid>
 </Window>
