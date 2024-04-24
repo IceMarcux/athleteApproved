@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace athleteApproved
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for approval_Form.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class approval_Form : Window
     {
-        public Page1()
+        public approval_Form()
         {
             InitializeComponent();
         }
