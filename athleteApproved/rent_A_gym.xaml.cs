@@ -26,7 +26,9 @@ namespace athleteApproved
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            USER_Rental objUSER_Rental = new USER_Rental();
+            this.Visibility = Visibility.Hidden;
+            objUSER_Rental.Show();
         }
 
         private void backButton_Click(object sender, RoutedEventArgs e)
