@@ -24,5 +24,10 @@ namespace athleteApproved
         {
             InitializeComponent();
         }
+
+        private void feedbackBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

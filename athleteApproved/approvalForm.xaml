@@ -11,14 +11,14 @@
         <Grid.Background>
             <ImageBrush ImageSource="/LAHAT NG GANTO.png" Stretch="Fill"/>
         </Grid.Background>
-        <Label HorizontalAlignment="Center" Width="452" Margin="0,269,0,0" VerticalAlignment="Top">
-            <Label Content="YOUR BOOKING" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" Background="Transparent" Foreground="#FFE6E6E6" FontSize="48"/>
-        </Label>
-        <Label Content="WAS SUCCESSFUL!" Foreground="#FFE6E6E6" Margin="0,344,0,344" FontSize="40" FontFamily="Rockwell Extra Bold" HorizontalAlignment="Center"/>
-        <Label Content="THANK YOU FOR" FontFamily="Rockwell Extra Bold" FontSize="35" Foreground="#FF232323" Margin="0,477,0,208" HorizontalAlignment="Center"/>
-        <Label Content="USING ATHELETE" HorizontalAlignment="Center" Height="51" Margin="0,522,0,0" VerticalAlignment="Top" Width="364" Foreground="#FF232323" FontSize="35" FontFamily="Rockwell Extra Bold"/>
-        <Label Content="APPROVED, ENJOY!" HorizontalAlignment="Center" Height="59" Margin="0,573,0,0" VerticalAlignment="Top" Width="400" Foreground="#FF232323" FontSize="35" FontFamily="Rockwell Extra Bold"/>
-        <Label Content="RENTAL ID:" HorizontalAlignment="Left" Height="56" Margin="288,654,0,0" VerticalAlignment="Top" Width="125" Foreground="#FF232323" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="15" FontFamily="Rockwell Extra Bold"/>
+        <Label HorizontalAlignment="Center" Width="382" Margin="0,269,0,0" VerticalAlignment="Top" Height="61"/>
+        <Label Content="WAS SUCCESSFUL!" Foreground="#FFE6E6E6" Margin="0,330,0,358" FontSize="40" FontFamily="Rockwell Extra Bold" HorizontalAlignment="Center"/>
+        <Label Content="YOUR BOOKING" Foreground="#FFE6E6E6" Margin="0,278,0,410" FontSize="40" FontFamily="Rockwell Extra Bold" HorizontalAlignment="Center"/>
+        <Label Content="RENTAL ID:" Height="44" Margin="313,665,0,0" VerticalAlignment="Top" Width="236" FontFamily="Rockwell" FontSize="15" Foreground="Black" HorizontalAlignment="Left"/>
+        <Label Content="THANK YOU FOR" Height="70" Margin="0,446,0,0" VerticalAlignment="Top" Width="442" FontFamily="Rockwell Extra Bold" FontSize="45" Foreground="Black" HorizontalAlignment="Center"/>
+        <Label Content="USING ATHLETE" Height="70" Margin="0,495,0,0" VerticalAlignment="Top" Width="442" FontFamily="Rockwell Extra Bold" FontSize="45" Foreground="Black" HorizontalAlignment="Center"/>
+        <Label Content="APPROVED!" Height="70" Margin="0,540,0,0" VerticalAlignment="Top" Width="322" FontFamily="Rockwell Extra Bold" FontSize="45" Foreground="Black" HorizontalAlignment="Center"/>
+        <Button x:Name="feedbackBtn" Content="LEAVE A FEEDBACK" HorizontalAlignment="Left" Height="38" Margin="601,661,0,0" VerticalAlignment="Top" Width="123" FontFamily="Rockwell" Foreground="#FF4B65CB" Click="feedbackBtn_Click" Background="{x:Null}" BorderBrush="{x:Null}"/>
 
     </Grid>
 </Page>
