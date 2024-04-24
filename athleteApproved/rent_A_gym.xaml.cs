@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace athleteApproved
 {
     /// <summary>
-    /// Interaction logic for rentAgym.xaml
+    /// Interaction logic for rent_A_gym.xaml
     /// </summary>
-    public partial class rentAgym : Page
+    public partial class rent_A_gym : Window
     {
-        public rentAgym()
+        public rent_A_gym()
         {
             InitializeComponent();
         }
@@ -32,9 +31,9 @@ namespace athleteApproved
 
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
-            logInUser objMainWindow = new logInUser();
+            logInUser objlogInUser = new logInUser();
             this.Visibility = Visibility.Hidden;
-            objMainWindow.Show();
+            objlogInUser.Show();
         }
     }
 }
