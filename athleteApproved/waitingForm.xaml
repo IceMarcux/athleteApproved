@@ -16,7 +16,7 @@
         <Label Content="PLEASE WAIT" Height="70" Margin="0,446,0,0" VerticalAlignment="Top" Width="402" FontFamily="Rockwell Extra Bold" FontSize="50" Foreground="Black" HorizontalAlignment="Center"/>
         <Label Content="FOR ADMIN" Height="70" Margin="0,500,0,0" VerticalAlignment="Top" Width="344" FontFamily="Rockwell Extra Bold" FontSize="50" Foreground="Black" HorizontalAlignment="Center"/>
         <Label Content="APPROVAL" Height="70" Margin="0,552,0,0" VerticalAlignment="Top" Width="322" FontFamily="Rockwell Extra Bold" FontSize="50" Foreground="Black" HorizontalAlignment="Center"/>
-        <Label Content="RENTAL ID:" Height="33" Margin="313,672,0,0" VerticalAlignment="Top" Width="236" FontFamily="Rockwell Extra Bold" FontSize="15" Foreground="Black" HorizontalAlignment="Left"/>
+        <Label Content="RENTAL ID:" Height="44" Margin="313,665,0,0" VerticalAlignment="Top" Width="236" FontFamily="Rockwell" FontSize="15" Foreground="Black" HorizontalAlignment="Left"/>
 
     </Grid>
 </Window>
