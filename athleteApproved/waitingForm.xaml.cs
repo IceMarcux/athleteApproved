@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace athleteApproved
 {
     /// <summary>
-    /// Interaction logic for logInUser.xaml
+    /// Interaction logic for waitingForm.xaml
     /// </summary>
-    public partial class logInUser : Window
+    public partial class waitingForm : Window
     {
-        public logInUser()
+        public waitingForm()
         {
             InitializeComponent();
-        }
-
-        private void backButton_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow objMainWindow = new MainWindow();
-            this.Visibility = Visibility.Hidden;
-            objMainWindow.Show();
         }
     }
 }

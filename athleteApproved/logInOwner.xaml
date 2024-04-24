@@ -11,8 +11,9 @@
     </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="513*"/>
-            <ColumnDefinition Width="287*"/>
+            <ColumnDefinition Width="659*"/>
+            <ColumnDefinition Width="56*"/>
+            <ColumnDefinition Width="313*"/>
         </Grid.ColumnDefinitions>
         <Label Content="OWNER" HorizontalAlignment="Left" Height="92" Margin="369,138,0,0" VerticalAlignment="Top" Width="290" FontFamily="Rockwell Extra Bold" FontSize="59" Foreground="#FFDFDFDF"/>
         <TextBox HorizontalAlignment="Left" Margin="309,262,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="401" Height="60" FontFamily="Sans Serif Collection" UndoLimit="98" VerticalContentAlignment="Bottom" FontSize="30" Grid.ColumnSpan="2">
@@ -35,7 +36,14 @@
 
         </TextBox>
         <Label Content="PASSWORD" HorizontalAlignment="Left" Height="44" Margin="318,322,0,0" VerticalAlignment="Top" Width="177" FontFamily="Rockwell Condensed" FontSize="25"/>
-        <Button x:Name="Continue" Content="CONTINUE" HorizontalAlignment="Left" Height="53" Margin="390,441,0,0" VerticalAlignment="Top" Width="240" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="32">
+        <Button x:Name="Continue" Content="CONTINUE" HorizontalAlignment="Left" Height="53" Margin="390,441,0,0" VerticalAlignment="Top" Width="240" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="32" Click="Continue_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="backButton" Content="&lt;" HorizontalAlignment="Left" Height="61" Margin="157,638,0,0" VerticalAlignment="Top" Width="74" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="50" Click="backButton_Click" Grid.Column="2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>

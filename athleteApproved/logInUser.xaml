@@ -38,6 +38,13 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <Button x:Name="backButton" Content="&lt;" HorizontalAlignment="Left" Height="61" Margin="872,638,0,0" VerticalAlignment="Top" Width="74" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="50" Click="backButton_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
 
     </Grid>
 </Window>
