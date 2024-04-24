@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:athleteApproved"
         mc:Ignorable="d"
-        Title="ownerDb" Height="779" Width="1028">
+        Title="ownerDb" Height="779" Width="1028" ResizeMode="NoResize">
     <Window.Background>
         <ImageBrush ImageSource="/COURT PROCESS.png"/>
     </Window.Background>
@@ -24,28 +24,31 @@
         <TextBox HorizontalAlignment="Left" Height="30" Margin="56,391,0,0" TextWrapping="Wrap" Text="Cardo Dalisay" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
         <Label Content="OWNER ID" HorizontalAlignment="Left" Height="27" Margin="53,421,0,0" VerticalAlignment="Top" Width="95" FontFamily="Rockwell" FontSize="16"/>
         <TextBox HorizontalAlignment="Left" Height="30" Margin="56,442,0,0" TextWrapping="Wrap" Text="2022100994" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
-        <Button x:Name="courtImg" Content="" HorizontalAlignment="Left" Height="178" Margin="356,192,0,0" VerticalAlignment="Top" Width="248" Background="White" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="courtImg_Click" BorderBrush="{x:Null}">
+        <Button x:Name="courtImg" Content="" HorizontalAlignment="Left" Height="150" Margin="356,192,0,0" VerticalAlignment="Top" Width="248" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="courtImg_Click" BorderBrush="{x:Null}">
 
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="/Mapua_ volleyball court1.png"/>
+            </Button.Background>
         </Button>
-        <Label Content="NAME" HorizontalAlignment="Left" Height="27" Margin="362,385,0,0" VerticalAlignment="Top" Width="82" FontFamily="Rockwell" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="364,406,0,0" TextWrapping="Wrap" Text="MAPUA GYMNASIUM" VerticalAlignment="Top" Width="240" FontFamily="Sans Serif Collection"/>
-        <Label Content="ADDRESS" HorizontalAlignment="Left" Height="27" Margin="362,437,0,0" VerticalAlignment="Top" Width="82" FontFamily="Rockwell" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="364,458,0,0" TextWrapping="Wrap" Text="INTAMUROS, MANILA" VerticalAlignment="Top" Width="240" FontFamily="Sans Serif Collection"/>
-        <Label Content="ZIP CODE" HorizontalAlignment="Left" Height="27" Margin="362,488,0,0" VerticalAlignment="Top" Width="112" FontFamily="Rockwell" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="364,509,0,0" TextWrapping="Wrap" Text="229922" VerticalAlignment="Top" Width="240" FontFamily="Sans Serif Collection"/>
-        <Label Content="OPERATING HOURS" HorizontalAlignment="Left" Height="27" Margin="362,540,0,0" VerticalAlignment="Top" Width="160" FontFamily="Rockwell" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="364,561,0,0" TextWrapping="Wrap" Text="10:00 AM - 10:00 PM" VerticalAlignment="Top" Width="240" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged"/>
-        <Label Content="AVAILABLE ADD-ONS" HorizontalAlignment="Left" Height="27" Margin="364,602,0,0" VerticalAlignment="Top" Width="173" FontFamily="Rockwell" FontSize="16"/>
-        <RadioButton Content="BASKETBALL" HorizontalAlignment="Left" Margin="376,634,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="VOLLEYBALL" HorizontalAlignment="Left" Margin="376,649,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="TOWEL" HorizontalAlignment="Left" Margin="376,664,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="DRINKING WATER" HorizontalAlignment="Left" Margin="376,679,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="addBtn" Content="ADD" HorizontalAlignment="Left" Height="61" Margin="636,630,0,0" VerticalAlignment="Top" Width="114" Background="#FFEE4848" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="addBtn_Click">
+        <Label Content="NAME" HorizontalAlignment="Left" Height="27" Margin="362,355,0,0" VerticalAlignment="Top" Width="82" FontFamily="Rockwell" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="364,377,0,0" TextWrapping="Wrap" Text="MAPUA GYMNASIUM" VerticalAlignment="Top" Width="240" FontFamily="Sans Serif Collection"/>
+        <Label Content="ADDRESS" HorizontalAlignment="Left" Height="27" Margin="362,407,0,0" VerticalAlignment="Top" Width="82" FontFamily="Rockwell" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="364,428,0,0" TextWrapping="Wrap" Text="INTAMUROS, MANILA" VerticalAlignment="Top" Width="240" FontFamily="Sans Serif Collection"/>
+        <Label Content="ZIP CODE" HorizontalAlignment="Left" Height="27" Margin="362,458,0,0" VerticalAlignment="Top" Width="112" FontFamily="Rockwell" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="364,479,0,0" TextWrapping="Wrap" Text="229922" VerticalAlignment="Top" Width="240" FontFamily="Sans Serif Collection"/>
+        <Label Content="OPERATING HOURS" HorizontalAlignment="Left" Height="27" Margin="362,510,0,0" VerticalAlignment="Top" Width="160" FontFamily="Rockwell" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="364,531,0,0" TextWrapping="Wrap" Text="10:00 AM - 10:00 PM" VerticalAlignment="Top" Width="240" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged"/>
+        <Label Content="AVAILABLE ADD-ONS" HorizontalAlignment="Right"  Margin="0,622,482,0" Width="173" FontFamily="Rockwell" FontSize="16" Height="27" VerticalAlignment="Top"/>
+        <RadioButton Content="BASKETBALL" HorizontalAlignment="Right" Margin="0,654,558,0" Height="15" VerticalAlignment="Top"/>
+        <RadioButton Content="VOLLEYBALL" HorizontalAlignment="Right" Margin="0,669,558,0" Height="15" VerticalAlignment="Top"/>
+        <RadioButton Content="TOWEL" HorizontalAlignment="Right" Margin="0,684,587,0" Height="15" VerticalAlignment="Top"/>
+        <RadioButton Content="DRINKING WATER" Margin="0,699,528,0" Height="15" VerticalAlignment="Top" HorizontalAlignment="Right" Width="115"/>
+        <Button x:Name="addBtn" Content="ADD" Margin="630,0,284,47" Background="#FFEE4848" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="addBtn_Click" Height="60" VerticalAlignment="Bottom">
 
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -72,7 +75,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="899,234,0,0" TextWrapping="Wrap" Text="KAPATIRAN" VerticalAlignment="Top" Width="90" FontFamily="Sans Serif Collection" FontSize="6"/>
+        <TextBox Margin="899,234,39,0" TextWrapping="Wrap" Text="KAPATIRAN" FontFamily="Sans Serif Collection" FontSize="6" Height="16" VerticalAlignment="Top"/>
         <Label Content="ADDRESS" HorizontalAlignment="Left" Height="26" Margin="894,247,0,0" VerticalAlignment="Top" Width="56" FontFamily="Rockwell" FontSize="10" Foreground="White" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -83,7 +86,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="899,263,0,0" TextWrapping="Wrap" Text="MORAYTA, MANILA" VerticalAlignment="Top" Width="90" FontFamily="Sans Serif Collection" FontSize="6"/>
+        <TextBox Height="16" Margin="899,263,39,0" TextWrapping="Wrap" Text="MORAYTA, MANILA" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="6"/>
         <Label Content="FEE" HorizontalAlignment="Left" Height="26" Margin="894,275,0,0" VerticalAlignment="Top" Width="56" FontFamily="Rockwell" FontSize="10" Foreground="White" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -94,7 +97,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="899,291,0,0" TextWrapping="Wrap" Text="300 PER HOUR" VerticalAlignment="Top" Width="90" FontFamily="Sans Serif Collection" FontSize="6"/>
+        <TextBox Height="16" Margin="899,291,39,0" TextWrapping="Wrap" Text="300 PER HOUR" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="6"/>
         <Button x:Name="courtImg_Copy1" Content="" HorizontalAlignment="Left" Height="83" Margin="800,352,0,0" VerticalAlignment="Top" Width="90" Background="White" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="courtImg_Click" BorderBrush="{x:Null}">
 
             <Button.Resources>
@@ -113,7 +116,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="899,362,0,0" TextWrapping="Wrap" Text="KAPATIRAN" VerticalAlignment="Top" Width="90" FontFamily="Sans Serif Collection" FontSize="6"/>
+        <TextBox Height="16" Margin="899,362,39,0" TextWrapping="Wrap" Text="KAPATIRAN" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="6"/>
         <Label Content="ADDRESS" HorizontalAlignment="Left" Height="26" Margin="894,374,0,0" VerticalAlignment="Top" Width="56" FontFamily="Rockwell" FontSize="10" Foreground="White" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -124,7 +127,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="899,390,0,0" TextWrapping="Wrap" Text="MORAYTA, MANILA" VerticalAlignment="Top" Width="90" FontFamily="Sans Serif Collection" FontSize="6"/>
+        <TextBox Height="16" Margin="899,390,39,0" TextWrapping="Wrap" Text="MORAYTA, MANILA" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="6"/>
         <Label Content="FEE" HorizontalAlignment="Left" Height="26" Margin="894,402,0,0" VerticalAlignment="Top" Width="56" FontFamily="Rockwell" FontSize="10" Foreground="White" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -135,7 +138,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="899,418,0,0" TextWrapping="Wrap" Text="300 PER HOUR" VerticalAlignment="Top" Width="90" FontFamily="Sans Serif Collection" FontSize="6"/>
+        <TextBox Height="16" Margin="899,418,39,0" TextWrapping="Wrap" Text="300 PER HOUR" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="6"/>
         <Button x:Name="courtImg_Copy2" Content="" HorizontalAlignment="Left" Height="83" Margin="800,485,0,0" VerticalAlignment="Top" Width="90" Background="White" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="courtImg_Click" BorderBrush="{x:Null}">
 
             <Button.Resources>
@@ -154,7 +157,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="899,495,0,0" TextWrapping="Wrap" Text="KAPATIRAN" VerticalAlignment="Top" Width="90" FontFamily="Sans Serif Collection" FontSize="6"/>
+        <TextBox Height="16" Margin="899,495,39,0" TextWrapping="Wrap" Text="KAPATIRAN" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="6"/>
         <Label Content="ADDRESS" HorizontalAlignment="Left" Height="26" Margin="894,507,0,0" VerticalAlignment="Top" Width="56" FontFamily="Rockwell" FontSize="10" Foreground="White" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -165,7 +168,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="899,523,0,0" TextWrapping="Wrap" Text="MORAYTA, MANILA" VerticalAlignment="Top" Width="90" FontFamily="Sans Serif Collection" FontSize="6"/>
+        <TextBox Height="16" Margin="899,523,39,0" TextWrapping="Wrap" Text="MORAYTA, MANILA" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="6"/>
         <Label Content="FEE" HorizontalAlignment="Left" Height="26" Margin="894,535,0,0" VerticalAlignment="Top" Width="56" FontFamily="Rockwell" FontSize="10" Foreground="White" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -176,7 +179,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="899,551,0,0" TextWrapping="Wrap" Text="300 PER HOUR" VerticalAlignment="Top" Width="90" FontFamily="Sans Serif Collection" FontSize="6"/>
+        <TextBox Height="16" Margin="899,551,39,0" TextWrapping="Wrap" Text="300 PER HOUR" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="6"/>
         <Button x:Name="courtImg_Copy3" Content="" HorizontalAlignment="Left" Height="83" Margin="800,612,0,0" VerticalAlignment="Top" Width="90" Background="White" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Click="courtImg_Click" BorderBrush="{x:Null}">
 
             <Button.Resources>
@@ -195,7 +198,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="899,622,0,0" TextWrapping="Wrap" Text="KAPATIRAN" VerticalAlignment="Top" Width="90" FontFamily="Sans Serif Collection" FontSize="6"/>
+        <TextBox Height="16" Margin="899,622,39,0" TextWrapping="Wrap" Text="KAPATIRAN" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="6"/>
         <Label Content="ADDRESS" HorizontalAlignment="Left" Height="26" Margin="894,634,0,0" VerticalAlignment="Top" Width="56" FontFamily="Rockwell" FontSize="10" Foreground="White" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -206,7 +209,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="899,650,0,0" TextWrapping="Wrap" Text="MORAYTA, MANILA" VerticalAlignment="Top" Width="90" FontFamily="Sans Serif Collection" FontSize="6"/>
+        <TextBox Height="16" Margin="899,650,39,0" TextWrapping="Wrap" Text="MORAYTA, MANILA" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="6"/>
         <Label Content="FEE" HorizontalAlignment="Left" Height="26" Margin="894,662,0,0" VerticalAlignment="Top" Width="56" FontFamily="Rockwell" FontSize="10" Foreground="White" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -217,7 +220,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="16" Margin="899,678,0,0" TextWrapping="Wrap" Text="300 PER HOUR" VerticalAlignment="Top" Width="90" FontFamily="Sans Serif Collection" FontSize="6"/>
+        <TextBox Margin="899,678,39,0" TextWrapping="Wrap" Text="300 PER HOUR" FontFamily="Sans Serif Collection" FontSize="6" Height="16" VerticalAlignment="Top"/>
+        <Label Content="RENTAL FEE" HorizontalAlignment="Left" Height="27" Margin="362,567,0,0" VerticalAlignment="Top" Width="160" FontFamily="Rockwell" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="364,588,0,0" TextWrapping="Wrap" Text=" 300 PER HOUR" VerticalAlignment="Top" Width="240" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged"/>
 
     </Grid>
 </Window>

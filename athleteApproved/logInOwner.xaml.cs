@@ -34,7 +34,9 @@ namespace athleteApproved
 
         private void Continue_Click(object sender, RoutedEventArgs e)
         {
-
+            ownerDb objownerDb = new ownerDb();
+            this.Visibility = Visibility.Hidden;
+            objownerDb.Show();
         }
     }
 }
