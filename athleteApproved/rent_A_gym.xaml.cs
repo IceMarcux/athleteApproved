@@ -27,7 +27,9 @@ namespace athleteApproved
 
         private void reviewBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            USER_FEEDBACK objUSER_FEEDBACK = new USER_FEEDBACK();
+            this.Visibility = Visibility.Hidden;
+            objUSER_FEEDBACK.Show();
         }
 
         private void rentBtn_Click(object sender, RoutedEventArgs e)

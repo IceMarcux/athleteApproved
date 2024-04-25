@@ -24,7 +24,14 @@ namespace athleteApproved
             InitializeComponent();
         }
 
-        private void feedbackBtn_Click(object sender, RoutedEventArgs e)
+        private void feedbackBtn_Click_1(object sender, RoutedEventArgs e)
+        {
+            USER_FEEDBACK objUSER_FEEDBACK = new USER_FEEDBACK();
+            this.Visibility = Visibility.Hidden;
+            objUSER_FEEDBACK.Show();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

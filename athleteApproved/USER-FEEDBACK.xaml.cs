@@ -28,5 +28,12 @@ namespace athleteApproved
         {
 
         }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            rent_A_gym objrent_A_gym = new rent_A_gym();
+            this.Visibility = Visibility.Hidden;
+            objrent_A_gym.Show();
+        }
     }
 }

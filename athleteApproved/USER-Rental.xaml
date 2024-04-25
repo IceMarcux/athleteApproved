@@ -26,12 +26,15 @@
         <TextBlock HorizontalAlignment="Left" Margin="371,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="271" FontFamily="Rockwell" FontWeight="Bold" FontSize="40" Foreground="#FFEE4848" Grid.ColumnSpan="2"><Run Language="en-ph" Text="RENT A GYM"/></TextBlock>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="332,262,0,0" Stroke="Black" VerticalAlignment="Top" 
             Width="649" Grid.ColumnSpan="2" RadiusX="0" RadiusY="0"/>
-        <Button x:Name="courtImg" Content="" HorizontalAlignment="Left" Height="122" Margin="359,280,0,0" VerticalAlignment="Top" Width="196" Background="White" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Grid.ColumnSpan="2">
+        <Button x:Name="courtImg" Content="" HorizontalAlignment="Left" Height="122" Margin="359,280,0,0" VerticalAlignment="Top" Width="196" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Grid.ColumnSpan="2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="/Mapua_ volleyball court1.png"/>
+            </Button.Background>
         </Button>
         <Label Content="MAPUA UNIVERSISTY" HorizontalAlignment="Left" Margin="47,273,0,0" VerticalAlignment="Top" Width="193" FontSize="17                    " FontFamily="Rockwell" FontWeight="Bold" Grid.Column="1"/>
         <Label Content="ADDRESS: " HorizontalAlignment="Left" Margin="47,299,0,0" VerticalAlignment="Top" Width="78" FontFamily="Rockwell" FontWeight="Bold" Grid.Column="1"/>
@@ -84,8 +87,6 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <CheckBox Content="CASH" HorizontalAlignment="Left" Margin="92,594,0,0" VerticalAlignment="Top" Height="16" Width="66" FontFamily="Rockwell" FontSize="15" Grid.Column="1"/>
-        <CheckBox Content="G-CASH" HorizontalAlignment="Center" Margin="0,594,0,0" VerticalAlignment="Top" Height="16" Width="80" FontFamily="Rockwell" FontSize="15" Grid.Column="1"/>
         <ComboBox HorizontalAlignment="Left" Margin="123,497,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="142" Margin="335,531,0,0" VerticalAlignment="Top" Width="100" Stroke="#FFEE4848" OpacityMask="White" Fill="White" RadiusX="10" RadiusY="10"/>
         <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="142" Margin="384,531,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
@@ -143,27 +144,29 @@
         <Label Content="BBALL" HorizontalAlignment="Left" Height="26" Margin="339,581,0,0" VerticalAlignment="Top" Width="43" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
         <Label Content="WATER" HorizontalAlignment="Left" Height="26" Margin="336,613,0,0" VerticalAlignment="Top" Width="49" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
         <Label Content="VBALL" HorizontalAlignment="Left" Height="26" Margin="339,645,0,0" VerticalAlignment="Top" Width="43" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,559,0,0" VerticalAlignment="Top" Width="39" Height="16" SelectionChanged="ComboBox_SelectionChanged"/>
         <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,587,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
         <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,615,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
         <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,647,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="173,330,0,0" Width="247" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="132,353,0,0" Width="288" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="132,379,0,0" Width="288" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
-        <Button x:Name="backButton" Content="&lt;" HorizontalAlignment="Left" Height="61" Margin="56,635,0,0" VerticalAlignment="Top" Width="74" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="50">
+        <Button x:Name="backButton" Content="&lt;" HorizontalAlignment="Left" Height="61" Margin="56,635,0,0" VerticalAlignment="Top" Width="74" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="50" Click="backButton_Click_1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="CONFIRM" HorizontalAlignment="Left" Height="30" Margin="119,647,0,0" VerticalAlignment="Top" Width="129" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="20" Grid.Column="1">
+        <Button x:Name="confirmBtn" Content="CONFIRM" HorizontalAlignment="Left" Height="44" Margin="106,640,0,0" VerticalAlignment="Top" Width="155" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="20" Grid.Column="1" Click="confirmBtn_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
         </Button>
+        <RadioButton x:Name="cashBtn" Grid.Column="1" Content="CASH" HorizontalAlignment="Left" Margin="89,597,0,0" VerticalAlignment="Top" FontFamily="Rockwell" FontSize="18" Checked="cashBtn_Checked"/>
+        <RadioButton x:Name="gcashBtn" Grid.Column="1" Content="GCASH" HorizontalAlignment="Center" Margin="0,597,0,0" VerticalAlignment="Top" FontFamily="Rockwell" FontSize="18" Checked="gcashBtn_Checked"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,560,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
 
     </Grid>
 </Window>

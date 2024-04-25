@@ -14,7 +14,7 @@
             <ColumnDefinition Width="273*"/>
             <ColumnDefinition Width="127*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="courtImg" Content="0917 777 787 " HorizontalAlignment="Left" Height="46" Margin="355,330,0,0" VerticalAlignment="Top" Width="318" Background="White" FontFamily="Rockwell Extra Bold" FontSize="40" Foreground="Black" Click="courtImg_Click" BorderBrush="White" FontWeight="Bold">
+        <Button x:Name="courtImg" Content="0917 777 787 " HorizontalAlignment="Left" Height="46" Margin="355,330,0,0" VerticalAlignment="Top" Width="318" Background="White" FontFamily="Rockwell Extra Bold" FontSize="40" Foreground="Black" BorderBrush="White" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -22,7 +22,7 @@
             </Button.Resources>
         </Button>
         <Label Content="PLEASE, SEND THE PAYMENT TO THIS G-CASH NUMBER" HorizontalAlignment="Left" Margin="303,305,0,0" VerticalAlignment="Top" Width="422" Grid.ColumnSpan="2" Foreground="White" FontFamily="Rockwell Extra Bold" FontSize="13" FontStretch="Normal"/>
-        <Button Content="CONFIRM PAYMENT" HorizontalAlignment="Left" Height="40" Margin="387,497,0,0" VerticalAlignment="Top" Width="254" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="20">
+        <Button x:Name="confirmBtn" Content="CONFIRM PAYMENT" HorizontalAlignment="Left" Height="62" Margin="379,471,0,0" VerticalAlignment="Top" Width="270" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="20" Click="confirmBtn_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>

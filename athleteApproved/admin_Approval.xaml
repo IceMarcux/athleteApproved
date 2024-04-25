@@ -5,16 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:athleteApproved"
         mc:Ignorable="d"
-        Title="admin_Approval" Height="450" Width="800">
-    <Grid>
+        Title="admin_Approval" Height="768" Width="1020">
+    <Grid Margin="0,0,0,-6">
         <Grid.Background>
             <ImageBrush ImageSource="/LAHAT NG GANTO.png"/>
         </Grid.Background>
-        <Label Content="YOUR BOOKING" HorizontalAlignment="Center" Margin="0,153,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Rockwell Extra Bold" Foreground="#FFDFDFDF"/>
-        <Label Content="WAS SUCCESSFUL" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontFamily="Rockwell Extra Bold" Foreground="#FFDFDFDF"/>
-        <Label Content="THANK YOU FOR" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontFamily="Rockwell Extra Bold" Foreground="#FF1F1F1F" Margin="0,260,0,0"/>
-        <Label Content="USING ATHLETE" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontFamily="Rockwell Extra Bold" Foreground="#FF1F1F1F" Margin="0,296,0,0"/>
-        <Label Content="APPROVED, ENJOY" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontFamily="Rockwell Extra Bold" Foreground="#FF1F1F1F" Margin="0,334,0,0"/>
+        <Label Content="YOUR BOOKING" HorizontalAlignment="Center" Margin="0,285,0,0" VerticalAlignment="Top" FontSize="40" FontFamily="Rockwell Extra Bold" Foreground="#FFDFDFDF"/>
+        <Label Content="WAS SUCCESSFUL" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40" FontFamily="Rockwell Extra Bold" Foreground="#FFDFDFDF" Margin="0,328,0,0"/>
+        <Label Content="THANK YOU FOR" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40" FontFamily="Rockwell Extra Bold" Foreground="#FF1F1F1F" Margin="0,459,0,0"/>
+        <Label Content="USING ATHLETE" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40" FontFamily="Rockwell Extra Bold" Foreground="#FF1F1F1F" Margin="0,495,0,0"/>
+        <Label Content="APPROVED!" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40" FontFamily="Rockwell Extra Bold" Foreground="#FF1F1F1F" Margin="0,533,0,0"/>
+        <Label Content="RENTAL ID:" Height="27" Margin="313,664,0,0" VerticalAlignment="Top" Width="93" FontFamily="Rockwell" FontSize="15" Foreground="Black" HorizontalAlignment="Left"/>
+        <Button x:Name="feedbackBtn" Content="LEAVE A FEEDBACK" HorizontalAlignment="Left" Height="31" Margin="563,662,0,0" VerticalAlignment="Top" Width="149" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Rockwell" FontSize="15" Foreground="#FFEE4848" Click="feedbackBtn_Click_1"/>
+        <TextBox HorizontalAlignment="Left" Height="21" Margin="400,667,0,0" TextWrapping="Wrap" Text="999999999999999" VerticalAlignment="Top" Width="115" TextChanged="TextBox_TextChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="15"/>
 
     </Grid>
 </Window>

@@ -24,9 +24,11 @@ namespace athleteApproved
             InitializeComponent();
         }
 
-        private void courtImg_Click(object sender, RoutedEventArgs e)
+        private void confirmBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            admin_Approval objadmin_Approval = new admin_Approval();
+            this.Visibility = Visibility.Hidden;
+            objadmin_Approval.Show();
         }
     }
 }
