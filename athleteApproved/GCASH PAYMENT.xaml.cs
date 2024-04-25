@@ -15,31 +15,16 @@ using System.Windows.Shapes;
 namespace athleteApproved
 {
     /// <summary>
-    /// Interaction logic for USER_Rental.xaml
+    /// Interaction logic for GCASH_PAYMENT.xaml
     /// </summary>
-    public partial class USER_Rental : Window
+    public partial class GCASH_PAYMENT : Window
     {
-        public USER_Rental()
+        public GCASH_PAYMENT()
         {
             InitializeComponent();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void courtImg_Click(object sender, RoutedEventArgs e)
         {
 
         }

@@ -24,8 +24,8 @@
         <TextBox HorizontalAlignment="Left" Height="30" Margin="56,391,0,0" TextWrapping="Wrap" Text="Ellybogs" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1"/>
         <TextBox HorizontalAlignment="Left" Height="30" Margin="56,442,0,0" TextWrapping="Wrap" Text="2022100994" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
         <TextBlock HorizontalAlignment="Left" Margin="371,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="271" FontFamily="Rockwell" FontWeight="Bold" FontSize="40" Foreground="#FFEE4848" Grid.ColumnSpan="2"><Run Language="en-ph" Text="RENT A GYM"/></TextBlock>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="334,262,0,0" Stroke="Black" VerticalAlignment="Top" 
-            Width="666" Grid.ColumnSpan="2"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="332,262,0,0" Stroke="Black" VerticalAlignment="Top" 
+            Width="649" Grid.ColumnSpan="2" RadiusX="0" RadiusY="0"/>
         <Button x:Name="courtImg" Content="" HorizontalAlignment="Left" Height="122" Margin="359,280,0,0" VerticalAlignment="Top" Width="196" Background="White" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Grid.ColumnSpan="2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -39,10 +39,10 @@
         <Label Content="RENTAL FEE: " HorizontalAlignment="Left" Margin="47,351,0,0" VerticalAlignment="Top" Width="83" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
         <Label Content="RENTAL ID: " HorizontalAlignment="Left" Margin="47,379,0,0" VerticalAlignment="Top" Width="78" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="117,302,0,0" Width="288" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="334,420,0,0" Stroke="Black" VerticalAlignment="Top" 
-            Width="666" Grid.ColumnSpan="2"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="441,572,0,0" Stroke="Black" VerticalAlignment="Top" 
-            Width="305" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="332,420,0,0" Stroke="Black" VerticalAlignment="Top" 
+            Width="649" Grid.ColumnSpan="2"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="452,561,0,0" Stroke="Black" VerticalAlignment="Top" 
+            Width="283" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -63,41 +63,32 @@
         <TextBox HorizontalAlignment="Left" Height="27" Margin="431,562,0,0" TextWrapping="Wrap" Text="Ellybogs" VerticalAlignment="Top" Width="150" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" Grid.ColumnSpan="2"/>
         <TextBox HorizontalAlignment="Left" Height="27" Margin="457,596,0,0" TextWrapping="Wrap" Text="69" VerticalAlignment="Top" Width="124" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.313"/>
         <TextBox HorizontalAlignment="Left" Height="27" Margin="486,631,0,0" TextWrapping="Wrap" Text="09718082349" VerticalAlignment="Top" Width="95" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" Grid.ColumnSpan="2"/>
-        <Button Content="AVAILABILITY" HorizontalAlignment="Left" Height="38" Margin="69,442,0,0" VerticalAlignment="Top" Width="232" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="20" Grid.Column="1">
+        <Button Content="ADD-ONS" HorizontalAlignment="Left" Height="33" Margin="322,491,0,0" VerticalAlignment="Top" Width="126" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="16" Grid.Column="1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="ADD-ONS" HorizontalAlignment="Left" Height="33" Margin="322,496,0,0" VerticalAlignment="Top" Width="126" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="16" Grid.Column="1">
+        <Button Content="BOOK TIME SLOT" HorizontalAlignment="Left" Height="40" Margin="70,442,0,0" VerticalAlignment="Top" Width="234" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="20" Grid.Column="1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <CheckBox Content="YES" HorizontalAlignment="Left" Margin="105,488,0,0" VerticalAlignment="Top" Height="16" Width="54" FontFamily="Rockwell" FontSize="15" Grid.Column="1"/>
-        <CheckBox Content="NO" HorizontalAlignment="Left" Margin="226,488,0,0" VerticalAlignment="Top" Height="16" Width="42" FontFamily="Rockwell" FontSize="15" Grid.Column="1"/>
-        <Button Content="BOOK TIME SLOT" HorizontalAlignment="Left" Height="40" Margin="69,526,0,0" VerticalAlignment="Top" Width="234" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="20" Grid.Column="1">
+        <Button Content="MODE OF PAYMENT" HorizontalAlignment="Left" Height="40" Margin="70,542,0,0" VerticalAlignment="Top" Width="234" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="18" Grid.Column="1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="MODE OF PAYMENT" HorizontalAlignment="Left" Height="40" Margin="69,618,0,0" VerticalAlignment="Top" Width="232" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="18" Grid.Column="1">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="15"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <CheckBox Content="CASH" HorizontalAlignment="Left" Margin="105,670,0,0" VerticalAlignment="Top" Height="16" Width="66" FontFamily="Rockwell" FontSize="15" Grid.Column="1"/>
-        <CheckBox Content="G-CASH" HorizontalAlignment="Left" Margin="188,670,0,0" VerticalAlignment="Top" Height="16" Width="80" FontFamily="Rockwell" FontSize="15" Grid.Column="1"/>
-        <ComboBox HorizontalAlignment="Left" Margin="125,576,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="143" Margin="335,538,0,0" VerticalAlignment="Top" Width="100" Stroke="#FFEE4848" OpacityMask="White" Fill="White" RadiusX="10" RadiusY="10"/>
-        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="143" Margin="384,538,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+        <CheckBox Content="CASH" HorizontalAlignment="Left" Margin="92,594,0,0" VerticalAlignment="Top" Height="16" Width="66" FontFamily="Rockwell" FontSize="15" Grid.Column="1"/>
+        <CheckBox Content="G-CASH" HorizontalAlignment="Center" Margin="0,594,0,0" VerticalAlignment="Top" Height="16" Width="80" FontFamily="Rockwell" FontSize="15" Grid.Column="1"/>
+        <ComboBox HorizontalAlignment="Left" Margin="123,497,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="142" Margin="335,531,0,0" VerticalAlignment="Top" Width="100" Stroke="#FFEE4848" OpacityMask="White" Fill="White" RadiusX="10" RadiusY="10"/>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="142" Margin="384,531,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -107,7 +98,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="385,512,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="385,504,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -117,7 +108,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="385,536,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="385,529,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -127,7 +118,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="385,566,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="385,559,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -137,7 +128,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="385,597,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="385,589,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -147,19 +138,26 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Label Content="QTY" HorizontalAlignment="Left" Height="26" Margin="390,538,0,0" VerticalAlignment="Top" Width="46" FontFamily="Rockwell" FontSize="13" Grid.Column="1"/>
-        <Label Content="TOWEL" HorizontalAlignment="Left" Height="26" Margin="336,563,0,0" VerticalAlignment="Top" Width="49" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
-        <Label Content="BBALL" HorizontalAlignment="Left" Height="26" Margin="339,589,0,0" VerticalAlignment="Top" Width="43" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
-        <Label Content="WATER" HorizontalAlignment="Left" Height="26" Margin="336,620,0,0" VerticalAlignment="Top" Width="49" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
-        <Label Content="VBALL" HorizontalAlignment="Left" Height="26" Margin="339,652,0,0" VerticalAlignment="Top" Width="43" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,566,0,0" VerticalAlignment="Top" Width="39" Height="16" SelectionChanged="ComboBox_SelectionChanged"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,594,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,622,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,654,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
+        <Label Content="QTY" HorizontalAlignment="Left" Height="26" Margin="390,531,0,0" VerticalAlignment="Top" Width="46" FontFamily="Rockwell" FontSize="13" Grid.Column="1"/>
+        <Label Content="TOWEL" HorizontalAlignment="Left" Height="26" Margin="336,555,0,0" VerticalAlignment="Top" Width="49" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
+        <Label Content="BBALL" HorizontalAlignment="Left" Height="26" Margin="339,581,0,0" VerticalAlignment="Top" Width="43" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
+        <Label Content="WATER" HorizontalAlignment="Left" Height="26" Margin="336,613,0,0" VerticalAlignment="Top" Width="49" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
+        <Label Content="VBALL" HorizontalAlignment="Left" Height="26" Margin="339,645,0,0" VerticalAlignment="Top" Width="43" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,559,0,0" VerticalAlignment="Top" Width="39" Height="16" SelectionChanged="ComboBox_SelectionChanged"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,587,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,615,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,647,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="173,330,0,0" Width="247" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="132,353,0,0" Width="288" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="132,379,0,0" Width="288" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
         <Button x:Name="backButton" Content="&lt;" HorizontalAlignment="Left" Height="61" Margin="56,635,0,0" VerticalAlignment="Top" Width="74" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="50">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="CONFIRM" HorizontalAlignment="Left" Height="30" Margin="119,647,0,0" VerticalAlignment="Top" Width="129" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="20" Grid.Column="1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
