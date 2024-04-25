@@ -30,7 +30,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="371,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="500" FontFamily="Rockwell" FontWeight="Bold" FontSize="40" Foreground="#FFEE4848" Grid.ColumnSpan="2"><Run Language="en-ph" Text="CUSTOMER"/><Run Text=" FEEDBACK"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="371,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="507" FontFamily="Rockwell" FontWeight="Bold" FontSize="40" Foreground="#FFEE4848" Grid.ColumnSpan="2"><Run Text="CUSTOMER"/><Run Text=" FEEDBACK"/><Run Language="en-ph" Text="S"/></TextBlock>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="334,262,0,0" Stroke="Black" VerticalAlignment="Top" 
             Width="666" Grid.ColumnSpan="2"/>
         <Button x:Name="courtImg" Content="" HorizontalAlignment="Left" Height="122" Margin="359,280,0,0" VerticalAlignment="Top" Width="196" FontFamily="Rockwell Condensed" FontSize="40" Grid.ColumnSpan="2">
@@ -133,6 +133,13 @@
         <Label Content="The ceiling of the court was too low, &#xD;&#xA;volleyball balls could easily stuck on the railings." HorizontalAlignment="Left" Height="40" Margin="184,596,0,0" VerticalAlignment="Top" Width="283" FontFamily="Rockwell" Grid.Column="1"/>
         <Label Content="LEAVE A FEEDBACK:" HorizontalAlignment="Left" Height="30" Margin="151,637,0,0" VerticalAlignment="Top" Width="167" FontFamily="Rockwell" FontSize="16" Grid.Column="1" Foreground="#FFEE4848"/>
         <TextBox HorizontalAlignment="Left" Height="26" Margin="155,666,0,0" TextWrapping="Wrap" Text="ANGAS NG COURT ANG GANDA!" VerticalAlignment="Top" Width="337" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" Grid.Column="1"/>
+        <Button x:Name="addBtn" Content="+" HorizontalAlignment="Left" Height="18" Margin="462,670,0,0" VerticalAlignment="Top" Width="25" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="10" Grid.Column="1" BorderBrush="{x:Null}" VerticalContentAlignment="Center">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
 
     </Grid>
 </Window>

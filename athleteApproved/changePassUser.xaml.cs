@@ -15,33 +15,20 @@ using System.Windows.Shapes;
 namespace athleteApproved
 {
     /// <summary>
-    /// Interaction logic for ownerDb.xaml
+    /// Interaction logic for changePassUser.xaml
     /// </summary>
-    public partial class ownerDb : Window
+    public partial class changePassUser : Window
     {
-        public ownerDb()
+        public changePassUser()
         {
             InitializeComponent();
         }
 
-        private void courtImg_Click(object sender, RoutedEventArgs e)
+        private void Continue_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void addBtn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void addPhotoBtn_Click(object sender, RoutedEventArgs e)
-        {
-
+            logInUser objlogInUser = new logInUser();
+            this.Visibility = Visibility.Hidden;
+            objlogInUser.Show();
         }
     }
 }

@@ -15,13 +15,20 @@ using System.Windows.Shapes;
 namespace athleteApproved
 {
     /// <summary>
-    /// Interaction logic for waitingForm.xaml
+    /// Interaction logic for changePassOwner.xaml
     /// </summary>
-    public partial class waitingForm : Window
+    public partial class changePassOwner : Window
     {
-        public waitingForm()
+        public changePassOwner()
         {
             InitializeComponent();
+        }
+
+        private void Continue_Click(object sender, RoutedEventArgs e)
+        {
+            logInOwner objlogInOwner = new logInOwner();
+            this.Visibility = Visibility.Hidden;
+            objlogInOwner.Show();
         }
     }
 }

@@ -38,5 +38,12 @@ namespace athleteApproved
             this.Visibility = Visibility.Hidden;
             objownerDb.Show();
         }
+
+        private void forgotBtn_Click(object sender, RoutedEventArgs e)
+        {
+            changePassOwner objchangePassOwner = new changePassOwner();
+            this.Visibility = Visibility.Hidden;
+            objchangePassOwner.Show();
+        }
     }
 }

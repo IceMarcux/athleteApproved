@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:athleteApproved"
         mc:Ignorable="d"
         Title="USER_Rental" Height="768" Width="1028">
-    <Grid>
+    <Grid> 
         <Grid.Background>
             <ImageBrush ImageSource="/RENTAL.png"/>
         </Grid.Background>
@@ -73,7 +73,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="BOOK TIME SLOT" HorizontalAlignment="Left" Height="40" Margin="70,442,0,0" VerticalAlignment="Top" Width="234" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="20" Grid.Column="1">
+        <Button Content="BOOK A COURT" HorizontalAlignment="Left" Height="40" Margin="70,442,0,0" VerticalAlignment="Top" Width="234" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="20" Grid.Column="1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -87,7 +87,6 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <ComboBox HorizontalAlignment="Left" Margin="123,497,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="142" Margin="335,531,0,0" VerticalAlignment="Top" Width="100" Stroke="#FFEE4848" OpacityMask="White" Fill="White" RadiusX="10" RadiusY="10"/>
         <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="142" Margin="384,531,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
@@ -99,7 +98,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="385,504,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="385,502,0,0" Stroke="#FFEE4848" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -144,9 +143,6 @@
         <Label Content="BBALL" HorizontalAlignment="Left" Height="26" Margin="339,581,0,0" VerticalAlignment="Top" Width="43" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
         <Label Content="WATER" HorizontalAlignment="Left" Height="26" Margin="336,613,0,0" VerticalAlignment="Top" Width="49" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
         <Label Content="VBALL" HorizontalAlignment="Left" Height="26" Margin="339,645,0,0" VerticalAlignment="Top" Width="43" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,587,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,615,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,647,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="173,330,0,0" Width="247" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="132,353,0,0" Width="288" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="132,379,0,0" Width="288" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
@@ -161,12 +157,44 @@
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
-                </Style>
+                </Style>          
             </Button.Resources>
         </Button>
         <RadioButton x:Name="cashBtn" Grid.Column="1" Content="CASH" HorizontalAlignment="Left" Margin="89,597,0,0" VerticalAlignment="Top" FontFamily="Rockwell" FontSize="18" Checked="cashBtn_Checked"/>
         <RadioButton x:Name="gcashBtn" Grid.Column="1" Content="GCASH" HorizontalAlignment="Center" Margin="0,597,0,0" VerticalAlignment="Top" FontFamily="Rockwell" FontSize="18" Checked="gcashBtn_Checked"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,560,0,0" VerticalAlignment="Top" Width="39" Height="16"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,555,0,0" VerticalAlignment="Top" Width="39" Height="22">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+
+        </ComboBox>
+        <DatePicker Grid.Column="1" HorizontalAlignment="Left" Margin="114,496,0,0" VerticalAlignment="Top" Width="152"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,583,0,0" VerticalAlignment="Top" Width="39" Height="22">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+
+        </ComboBox>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,613,0,0" VerticalAlignment="Top" Width="39" Height="22">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+
+        </ComboBox>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,644,0,0" VerticalAlignment="Top" Width="39" Height="22">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+
+        </ComboBox>
 
     </Grid>
 </Window>
