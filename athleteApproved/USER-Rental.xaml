@@ -170,7 +170,7 @@
             <ComboBoxItem Content="5"/>
 
         </ComboBox>
-        <DatePicker Grid.Column="1" HorizontalAlignment="Left" Margin="114,496,0,0" VerticalAlignment="Top" Width="152"/>
+        <DatePicker Grid.Column="1" HorizontalAlignment="Left" Margin="114,487,0,0" VerticalAlignment="Top" Width="152"/>
         <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="390,583,0,0" VerticalAlignment="Top" Width="39" Height="22">
             <ComboBoxItem Content="1"/>
             <ComboBoxItem Content="2"/>
@@ -193,6 +193,32 @@
             <ComboBoxItem Content="3"/>
             <ComboBoxItem Content="4"/>
             <ComboBoxItem Content="5"/>
+
+        </ComboBox>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Height="21" Margin="117,516,0,0" VerticalAlignment="Top" Width="144" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="10:00 AM - 11:00 AM"/>
+            <ComboBoxItem Content="11:00 AM - 12:00 PM"/>
+            <ComboBoxItem Content="12:00 PM - 1:00 PM"/>
+            <ComboBoxItem Content="1:00 PM - 2:00 PM"/>
+            <ComboBoxItem Content="2:00 PM - 3:00 PM"/>
+            <ComboBoxItem Content="3:00 PM - 4:00 PM"/>
+            <ComboBoxItem Content="4:00 PM - 5:00 PM"/>
+            <ComboBoxItem Content="5:00 PM - 6:00 PM"/>
+            <ComboBoxItem Content="6:00 PM - 7:00 PM"/>
+            <ComboBoxItem Content="7:00 PM - 8:00 PM"/>
+            <ComboBoxItem Content="8:00 PM - 9:00 PM"/>
+            <ComboBoxItem Content="9:00 PM - 10:00 PM"/>
+
+
+
+
+
+
+
+
+
+
+
 
         </ComboBox>
 

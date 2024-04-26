@@ -77,5 +77,10 @@ namespace athleteApproved
             this.Visibility = Visibility.Hidden;
             objrent_A_gym.Show();
         }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
