@@ -41,7 +41,6 @@
         <Label Content="OPERATING HOURS: " HorizontalAlignment="Left" Margin="47,326,0,0" VerticalAlignment="Top" Width="126" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
         <Label Content="RENTAL FEE: " HorizontalAlignment="Left" Margin="47,351,0,0" VerticalAlignment="Top" Width="83" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
         <Label Content="RENTAL ID: " HorizontalAlignment="Left" Margin="47,379,0,0" VerticalAlignment="Top" Width="78" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
-        <TextBox HorizontalAlignment="Left" Height="19" Margin="117,302,0,0" Width="288" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="332,420,0,0" Stroke="Black" VerticalAlignment="Top" 
             Width="649" Grid.ColumnSpan="2"/>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="452,561,0,0" Stroke="Black" VerticalAlignment="Top" 
@@ -143,9 +142,6 @@
         <Label Content="BBALL" HorizontalAlignment="Left" Height="26" Margin="339,581,0,0" VerticalAlignment="Top" Width="43" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
         <Label Content="WATER" HorizontalAlignment="Left" Height="26" Margin="336,613,0,0" VerticalAlignment="Top" Width="49" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
         <Label Content="VBALL" HorizontalAlignment="Left" Height="26" Margin="339,645,0,0" VerticalAlignment="Top" Width="43" FontFamily="Rockwell" FontSize="11" Grid.Column="1"/>
-        <TextBox HorizontalAlignment="Left" Height="19" Margin="173,330,0,0" Width="247" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
-        <TextBox HorizontalAlignment="Left" Height="19" Margin="132,353,0,0" Width="288" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
-        <TextBox HorizontalAlignment="Left" Height="19" Margin="132,379,0,0" Width="288" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" ScrollViewer.CanContentScroll="True" Text="intramuros" Grid.Column="1" FontSize="10" VerticalAlignment="Top" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>
         <Button x:Name="backButton" Content="&lt;" HorizontalAlignment="Left" Height="61" Margin="56,635,0,0" VerticalAlignment="Top" Width="74" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="50" Click="backButton_Click_1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -195,6 +191,7 @@
             <ComboBoxItem Content="5"/>
 
         </ComboBox>
+<<<<<<< HEAD
         <ComboBox Grid.Column="1" HorizontalAlignment="Left" Height="21" Margin="117,516,0,0" VerticalAlignment="Top" Width="144" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem Content="10:00 AM - 11:00 AM"/>
             <ComboBoxItem Content="11:00 AM - 12:00 PM"/>
@@ -221,6 +218,12 @@
 
 
         </ComboBox>
+=======
+        <Label x:Name="addressLabel" Grid.Column="1" Content="INTRAMUROS" HorizontalAlignment="Left" Margin="114,302,0,0" VerticalAlignment="Top" FontSize="9" FontFamily="Rockwell" Width="276"/>
+        <Label x:Name="opHoursLabel" Grid.Column="1" Content="10:00AM - 10:00PM" HorizontalAlignment="Left" Margin="178,328,0,0" VerticalAlignment="Top" FontSize="9" FontFamily="Rockwell" Width="276"/>
+        <Label x:Name="feeLabel" Grid.Column="1" Content="350.00 / HR" HorizontalAlignment="Left" Margin="130,352,0,0" VerticalAlignment="Top" FontSize="9" FontFamily="Rockwell" Width="276"/>
+        <Label x:Name="rentalIDLabel" Grid.Column="1" Content="019123678" HorizontalAlignment="Left" Margin="123,380,0,0" VerticalAlignment="Top" FontSize="9" FontFamily="Rockwell" Width="276"/>
+>>>>>>> 2fb0ec8b0612bfc2ac6bfaefeeeb7ff9cdab4189
 
     </Grid>
 </Window>
