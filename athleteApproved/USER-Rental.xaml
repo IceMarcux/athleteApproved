@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:athleteApproved"
         mc:Ignorable="d"
         Title="USER_Rental" Height="768" Width="1028">
-    <Grid> 
+    <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/RENTAL.png"/>
         </Grid.Background>
@@ -21,8 +21,6 @@
         </Button>
         <Label Content="NAME:" HorizontalAlignment="Left" Height="27" Margin="53,370,0,0" VerticalAlignment="Top" Width="82" FontFamily="Rockwell" FontSize="16"/>
         <Label Content="USER ID:" HorizontalAlignment="Left" Height="27" Margin="53,421,0,0" VerticalAlignment="Top" Width="95" FontFamily="Rockwell" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="56,391,0,0" TextWrapping="Wrap" Text="Ellybogs" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="56,442,0,0" TextWrapping="Wrap" Text="2022100994" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
         <TextBlock HorizontalAlignment="Left" Margin="371,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="271" FontFamily="Rockwell" FontWeight="Bold" FontSize="40" Foreground="#FFEE4848" Grid.ColumnSpan="2"><Run Language="en-ph" Text="RENT A GYM"/></TextBlock>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="332,262,0,0" Stroke="Black" VerticalAlignment="Top" 
             Width="649" Grid.ColumnSpan="2" RadiusX="0" RadiusY="0"/>
@@ -40,7 +38,6 @@
         <Label Content="ADDRESS: " HorizontalAlignment="Left" Margin="47,299,0,0" VerticalAlignment="Top" Width="78" FontFamily="Rockwell" FontWeight="Bold" Grid.Column="1"/>
         <Label Content="OPERATING HOURS: " HorizontalAlignment="Left" Margin="47,326,0,0" VerticalAlignment="Top" Width="126" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
         <Label Content="RENTAL FEE: " HorizontalAlignment="Left" Margin="47,351,0,0" VerticalAlignment="Top" Width="83" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
-        <Label Content="RENTAL ID: " HorizontalAlignment="Left" Margin="47,379,0,0" VerticalAlignment="Top" Width="78" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="332,420,0,0" Stroke="Black" VerticalAlignment="Top" 
             Width="649" Grid.ColumnSpan="2"/>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="452,561,0,0" Stroke="Black" VerticalAlignment="Top" 
@@ -62,9 +59,6 @@
         </Button>
         <Label Content="OWNER ID:" HorizontalAlignment="Left" Height="26" Margin="359,594,0,0" VerticalAlignment="Top" Width="98" FontFamily="Rockwell" FontSize="16" RenderTransformOrigin="0.547,0.094"/>
         <Label Content="CONTACT NO.:" HorizontalAlignment="Left" Height="27" Margin="359,630,0,0" VerticalAlignment="Top" Width="133" FontFamily="Rockwell" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="27" Margin="431,562,0,0" TextWrapping="Wrap" Text="Ellybogs" VerticalAlignment="Top" Width="150" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" Grid.ColumnSpan="2"/>
-        <TextBox HorizontalAlignment="Left" Height="27" Margin="457,596,0,0" TextWrapping="Wrap" Text="69" VerticalAlignment="Top" Width="124" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.313"/>
-        <TextBox HorizontalAlignment="Left" Height="27" Margin="486,631,0,0" TextWrapping="Wrap" Text="09718082349" VerticalAlignment="Top" Width="95" FontFamily="Sans Serif Collection" TextChanged="TextBox_TextChanged_1" Grid.ColumnSpan="2"/>
         <Button Content="ADD-ONS" HorizontalAlignment="Left" Height="33" Margin="322,491,0,0" VerticalAlignment="Top" Width="126" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="16" Grid.Column="1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -153,7 +147,7 @@
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
-                </Style>          
+                </Style>
             </Button.Resources>
         </Button>
         <RadioButton x:Name="cashBtn" Grid.Column="1" Content="CASH" HorizontalAlignment="Left" Margin="89,597,0,0" VerticalAlignment="Top" FontFamily="Rockwell" FontSize="18" Checked="cashBtn_Checked"/>
@@ -191,7 +185,6 @@
             <ComboBoxItem Content="5"/>
 
         </ComboBox>
-<<<<<<< HEAD
         <ComboBox Grid.Column="1" HorizontalAlignment="Left" Height="21" Margin="117,516,0,0" VerticalAlignment="Top" Width="144" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem Content="10:00 AM - 11:00 AM"/>
             <ComboBoxItem Content="11:00 AM - 12:00 PM"/>
@@ -207,23 +200,16 @@
             <ComboBoxItem Content="9:00 PM - 10:00 PM"/>
 
 
-
-
-
-
-
-
-
-
-
-
         </ComboBox>
-=======
-        <Label x:Name="addressLabel" Grid.Column="1" Content="INTRAMUROS" HorizontalAlignment="Left" Margin="114,302,0,0" VerticalAlignment="Top" FontSize="9" FontFamily="Rockwell" Width="276"/>
-        <Label x:Name="opHoursLabel" Grid.Column="1" Content="10:00AM - 10:00PM" HorizontalAlignment="Left" Margin="178,328,0,0" VerticalAlignment="Top" FontSize="9" FontFamily="Rockwell" Width="276"/>
-        <Label x:Name="feeLabel" Grid.Column="1" Content="350.00 / HR" HorizontalAlignment="Left" Margin="130,352,0,0" VerticalAlignment="Top" FontSize="9" FontFamily="Rockwell" Width="276"/>
-        <Label x:Name="rentalIDLabel" Grid.Column="1" Content="019123678" HorizontalAlignment="Left" Margin="123,380,0,0" VerticalAlignment="Top" FontSize="9" FontFamily="Rockwell" Width="276"/>
->>>>>>> 2fb0ec8b0612bfc2ac6bfaefeeeb7ff9cdab4189
+        <Label Grid.Column="1" Content="Intramuros, Manila" HorizontalAlignment="Left" Margin="110,291,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection"/>
+        <Label Grid.Column="1" Content="10:00 AM - 10:00 PM" HorizontalAlignment="Left" Margin="167,317,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection"/>
+        <Label Grid.Column="1" Content="300 PER HOUR" HorizontalAlignment="Left" Margin="130,341,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection"/>
+        <Label Content="ELEAZAR" HorizontalAlignment="Left" Margin="429,553,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="15"/>
+        <Label Content="999999999" HorizontalAlignment="Left" Margin="452,585,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="15"/>
+        <Label Content="09909" HorizontalAlignment="Left" Margin="480,621,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="15" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="1" Content="300 PER HOUR" HorizontalAlignment="Left" Margin="130,341,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection"/>
+        <Label Content="MOSH" HorizontalAlignment="Left" Margin="107,361,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="15"/>
+        <Label Content="999999999" HorizontalAlignment="Left" Margin="125,412,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="15"/>
 
     </Grid>
 </Window>

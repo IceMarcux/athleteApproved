@@ -30,5 +30,12 @@ namespace athleteApproved
             this.Visibility = Visibility.Hidden;
             objadmin_Approval.Show();
         }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            USER_Rental objUSER_Rental = new USER_Rental();
+            this.Visibility = Visibility.Hidden;
+            objUSER_Rental.Show();
+        }
     }
 }

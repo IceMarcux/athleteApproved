@@ -9,7 +9,7 @@
     <Window.Background>
         <ImageBrush ImageSource="/RENTAL.png"/>
     </Window.Background>
-    <Grid>
+    <Grid Margin="0,-5,0,5">
         <Grid Margin="0,0,0,4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="183*"/>
@@ -22,7 +22,6 @@
             </Button>
             <Label Content="NAME:" HorizontalAlignment="Left" Height="27" Margin="53,370,0,0" VerticalAlignment="Top" Width="82" FontFamily="Rockwell" FontSize="16"/>
             <Label Content="USER ID:" HorizontalAlignment="Left" Height="27" Margin="53,421,0,0" VerticalAlignment="Top" Width="95" FontFamily="Rockwell" FontSize="16"/>
-            <TextBox HorizontalAlignment="Left" Height="30" Margin="56,442,0,0" TextWrapping="Wrap" Text="2022100994" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
             <Button x:Name="backButton" Content="&lt;" HorizontalAlignment="Left" Height="61" Margin="56,635,0,0" VerticalAlignment="Top" Width="74" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="50" Click="backButton_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -50,15 +49,8 @@
             <Label Content="ADDRESS: " HorizontalAlignment="Left" Margin="119,299,0,0" VerticalAlignment="Top" Width="78" FontFamily="Rockwell" FontWeight="Bold" Grid.Column="1"/>
             <Label Content="OPERATING HOURS: " HorizontalAlignment="Left" Margin="119,326,0,0" VerticalAlignment="Top" Width="126" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
             <Label Content="RENTAL FEE: " HorizontalAlignment="Left" Margin="119,351,0,0" VerticalAlignment="Top" Width="83" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
-            <Label Content="RENTAL ID: " HorizontalAlignment="Left" Margin="119,379,0,0" VerticalAlignment="Top" Width="78" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
             <Rectangle HorizontalAlignment="Left" Height="1" Margin="334,420,0,0" Stroke="Black" VerticalAlignment="Top" 
                 Width="666" Grid.ColumnSpan="2"/>
-            <Label Content="PHONE NO.:" HorizontalAlignment="Left" Height="27" Margin="53,472,0,0" VerticalAlignment="Top" Width="104" FontFamily="Rockwell" FontSize="16"/>
-            <TextBox HorizontalAlignment="Left" Height="30" Margin="56,496,0,0" TextWrapping="Wrap" Text="2022100994" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
-            <Label Content="E-MAIL:" HorizontalAlignment="Left" Height="27" Margin="53,526,0,0" VerticalAlignment="Top" Width="95" FontFamily="Rockwell" FontSize="16"/>
-            <TextBox HorizontalAlignment="Left" Height="30" Margin="56,546,0,0" TextWrapping="Wrap" Text="ellypogi@yahoo.com" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
-            <Label Content="MODE OF PAYMENT:" HorizontalAlignment="Left" Height="27" Margin="53,576,0,0" VerticalAlignment="Top" Width="173" FontFamily="Rockwell" FontSize="16"/>
-            <TextBox HorizontalAlignment="Left" Height="30" Margin="56,600,0,0" TextWrapping="Wrap" Text="CASH" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
             <Button x:Name="courtImg_Copy" HorizontalAlignment="Left" Height="263" Margin="23,442,0,0" VerticalAlignment="Top" Width="365" Background="White" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Grid.Column="1">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -107,11 +99,12 @@
             <Label Content="The ceiling of the court was too low, &#xA;volleyball balls could easily stuck on the railings." HorizontalAlignment="Left" Height="40" Margin="65,596,0,0" VerticalAlignment="Top" Width="283" FontFamily="Rockwell" Grid.Column="1"/>
             <Label Content="NAG KISHA CRUZ" HorizontalAlignment="Left" Height="40" Margin="32,634,0,0" VerticalAlignment="Top" Width="142" FontFamily="Rockwell" FontSize="16" Grid.Column="1" Foreground="#FFEE4848"/>
             <Label Content="The ceiling of the court was too low, &#xA;volleyball balls could easily stuck on the railings." HorizontalAlignment="Left" Height="40" Margin="65,656,0,0" VerticalAlignment="Top" Width="283" FontFamily="Rockwell" Grid.Column="1"/>
-            <TextBox HorizontalAlignment="Left" Height="30" Margin="56,392,0,0" TextWrapping="Wrap" Text="ELLYBOG" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
-            <TextBox HorizontalAlignment="Left" Height="22" Margin="191,299,0,0" TextWrapping="Wrap" Text="ELLYBOG" VerticalAlignment="Top" Width="319" FontFamily="Sans Serif Collection" Grid.Column="1"/>
-            <TextBox HorizontalAlignment="Left" Height="22" Margin="245,326,0,0" TextWrapping="Wrap" Text="ELLYBOG" VerticalAlignment="Top" Width="265" FontFamily="Sans Serif Collection" Grid.Column="1"/>
+            <Label Grid.Column="1" Content="Intramuros, Manila" HorizontalAlignment="Left" Margin="182,291,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection"/>
+            <Label Grid.Column="1" Content="10:00 AM - 10:00 PM" HorizontalAlignment="Left" Margin="239,317,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection"/>
+            <Label Grid.Column="1" Content="300 PER HOUR" HorizontalAlignment="Left" Margin="202,341,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection"/>
 
         </Grid>
+
         <Grid Margin="0,0,0,4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="183*"/>
@@ -124,7 +117,6 @@
             </Button>
             <Label Content="NAME:" HorizontalAlignment="Left" Height="27" Margin="53,370,0,0" VerticalAlignment="Top" Width="82" FontFamily="Rockwell" FontSize="16"/>
             <Label Content="USER ID:" HorizontalAlignment="Left" Height="27" Margin="53,421,0,0" VerticalAlignment="Top" Width="95" FontFamily="Rockwell" FontSize="16"/>
-            <TextBox HorizontalAlignment="Left" Height="30" Margin="56,442,0,0" TextWrapping="Wrap" Text="2022100994" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
             <Button x:Name="backButton1" Content="&lt;" HorizontalAlignment="Left" Height="61" Margin="56,635,0,0" VerticalAlignment="Top" Width="74" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="50" Click="backButton_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -152,15 +144,8 @@
             <Label Content="ADDRESS: " HorizontalAlignment="Left" Margin="119,299,0,0" VerticalAlignment="Top" Width="78" FontFamily="Rockwell" FontWeight="Bold" Grid.Column="1"/>
             <Label Content="OPERATING HOURS: " HorizontalAlignment="Left" Margin="119,326,0,0" VerticalAlignment="Top" Width="126" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
             <Label Content="RENTAL FEE: " HorizontalAlignment="Left" Margin="119,351,0,0" VerticalAlignment="Top" Width="83" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
-            <Label Content="RENTAL ID: " HorizontalAlignment="Left" Margin="119,379,0,0" VerticalAlignment="Top" Width="78" FontFamily="Rockwell" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
             <Rectangle HorizontalAlignment="Left" Height="1" Margin="334,420,0,0" Stroke="Black" VerticalAlignment="Top" 
                 Width="666" Grid.ColumnSpan="2"/>
-            <Label Content="PHONE NO.:" HorizontalAlignment="Left" Height="27" Margin="53,472,0,0" VerticalAlignment="Top" Width="104" FontFamily="Rockwell" FontSize="16"/>
-            <TextBox HorizontalAlignment="Left" Height="30" Margin="56,496,0,0" TextWrapping="Wrap" Text="2022100994" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
-            <Label Content="E-MAIL:" HorizontalAlignment="Left" Height="27" Margin="53,526,0,0" VerticalAlignment="Top" Width="95" FontFamily="Rockwell" FontSize="16"/>
-            <TextBox HorizontalAlignment="Left" Height="30" Margin="56,546,0,0" TextWrapping="Wrap" Text="ellypogi@yahoo.com" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
-            <Label Content="MODE OF PAYMENT:" HorizontalAlignment="Left" Height="27" Margin="53,576,0,0" VerticalAlignment="Top" Width="173" FontFamily="Rockwell" FontSize="16"/>
-            <TextBox HorizontalAlignment="Left" Height="30" Margin="56,600,0,0" TextWrapping="Wrap" Text="CASH" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
             <Button x:Name="courtImg_Copy1" HorizontalAlignment="Left" Height="263" Margin="23,442,0,0" VerticalAlignment="Top" Width="365" Background="White" FontFamily="Rockwell Condensed" FontSize="40" Foreground="#FFDFDFDF" Grid.Column="1">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -209,9 +194,8 @@
             <Label Content="The ceiling of the court was too low, &#xA;volleyball balls could easily stuck on the railings." HorizontalAlignment="Left" Height="40" Margin="65,596,0,0" VerticalAlignment="Top" Width="283" FontFamily="Rockwell" Grid.Column="1"/>
             <Label Content="NAG KISHA CRUZ" HorizontalAlignment="Left" Height="40" Margin="32,634,0,0" VerticalAlignment="Top" Width="142" FontFamily="Rockwell" FontSize="16" Grid.Column="1" Foreground="#FFEE4848"/>
             <Label Content="The ceiling of the court was too low, &#xA;volleyball balls could easily stuck on the railings." HorizontalAlignment="Left" Height="40" Margin="65,656,0,0" VerticalAlignment="Top" Width="283" FontFamily="Rockwell" Grid.Column="1"/>
-            <TextBox HorizontalAlignment="Left" Height="30" Margin="56,392,0,0" TextWrapping="Wrap" Text="ELLYBOG" VerticalAlignment="Top" Width="231" FontFamily="Sans Serif Collection"/>
-            <TextBox HorizontalAlignment="Left" Height="22" Margin="191,299,0,0" TextWrapping="Wrap" Text="ELLYBOG" VerticalAlignment="Top" Width="319" FontFamily="Sans Serif Collection" Grid.Column="1"/>
-            <TextBox HorizontalAlignment="Left" Height="22" Margin="207,352,0,0" TextWrapping="Wrap" Text="ELLYBOG" VerticalAlignment="Top" Width="265" FontFamily="Sans Serif Collection" Grid.Column="1"/>
+            <Label Content="MOSH" HorizontalAlignment="Left" Margin="107,361,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="15"/>
+            <Label Content="999999999" HorizontalAlignment="Left" Margin="125,412,0,0" VerticalAlignment="Top" FontFamily="Sans Serif Collection" FontSize="15"/>
 
         </Grid>
 
