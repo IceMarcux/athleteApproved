@@ -24,9 +24,26 @@ namespace athleteApproved
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
 
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow objMainWindow = new MainWindow();
+            this.Visibility = Visibility.Hidden;
+            objMainWindow.Show();
+        }
+
+        private void Continue_Click(object sender, RoutedEventArgs e)
+        {
+            ownerDb objownerDb = new ownerDb();
+            this.Visibility = Visibility.Hidden;
+            objownerDb.Show();
+        }
+
+        private void forgotBtn_Click(object sender, RoutedEventArgs e)
+        {
+            changePassOwner objchangePassOwner = new changePassOwner();
+            this.Visibility = Visibility.Hidden;
+            objchangePassOwner.Show();
         }
     }
 }

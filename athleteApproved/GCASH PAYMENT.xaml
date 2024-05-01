@@ -1,0 +1,41 @@
+﻿<Window x:Class="athleteApproved.GCASH_PAYMENT"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:athleteApproved"
+        mc:Ignorable="d"
+        Title="GCASH_PAYMENT" Height="768" Width="1028">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/LAHAT NG GANTO.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="273*"/>
+            <ColumnDefinition Width="127*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="courtImg" Content="0917 777 787 " HorizontalAlignment="Left" Height="46" Margin="355,330,0,0" VerticalAlignment="Top" Width="318" Background="White" FontFamily="Rockwell Extra Bold" FontSize="40" Foreground="Black" BorderBrush="White" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="PLEASE, SEND THE PAYMENT TO THIS G-CASH NUMBER" HorizontalAlignment="Left" Margin="303,305,0,0" VerticalAlignment="Top" Width="422" Grid.ColumnSpan="2" Foreground="White" FontFamily="Rockwell Extra Bold" FontSize="13" FontStretch="Normal"/>
+        <Button x:Name="confirmBtn" Content="CONFIRM PAYMENT" HorizontalAlignment="Left" Height="62" Margin="379,471,0,0" VerticalAlignment="Top" Width="270" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="20" Click="confirmBtn_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="backButton" Content="&lt;" HorizontalAlignment="Left" Height="60" Margin="64,636,0,0" VerticalAlignment="Top" Width="74" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="50" Click="backButton_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Window>

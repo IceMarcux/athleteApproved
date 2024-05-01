@@ -11,10 +11,7 @@
   <ItemGroup>
     <None Remove="COURT PROCESS.png" />
     <None Remove="dashboard.png" />
-    <None Remove="IBATO REAL.png" />
     <None Remove="LAHAT NG GANTO.png" />
-    <None Remove="Mapua_ volleyball court1.png" />
-    <None Remove="RENTAL.png" />
     <None Remove="user.png" />
     <None Remove="USER_OWNER_SIGNUP.png" />
   </ItemGroup>
@@ -22,10 +19,7 @@
   <ItemGroup>
     <Resource Include="COURT PROCESS.png" />
     <Resource Include="dashboard.png" />
-    <Resource Include="IBATO REAL.png" />
     <Resource Include="LAHAT NG GANTO.png" />
-    <Resource Include="Mapua_ volleyball court1.png" />
-    <Resource Include="RENTAL.png" />
     <Resource Include="user.png" />
     <Resource Include="USER_OWNER_SIGNUP.png" />
   </ItemGroup>

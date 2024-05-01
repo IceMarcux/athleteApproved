@@ -11,10 +11,11 @@
     </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="513*"/>
-            <ColumnDefinition Width="287*"/>
+            <ColumnDefinition Width="319*"/>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="132*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="OWNER" HorizontalAlignment="Left" Height="92" Margin="369,138,0,0" VerticalAlignment="Top" Width="290" FontFamily="Rockwell Extra Bold" FontSize="59" Foreground="#FFDFDFDF"/>
+        <Label Content="OWNER" HorizontalAlignment="Left" Height="92" Margin="369,138,0,0" VerticalAlignment="Top" Width="290" FontFamily="Rockwell Extra Bold" FontSize="59" Foreground="#FFDFDFDF" Grid.ColumnSpan="2"/>
         <TextBox HorizontalAlignment="Left" Margin="309,262,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="401" Height="60" FontFamily="Sans Serif Collection" UndoLimit="98" VerticalContentAlignment="Bottom" FontSize="30" Grid.ColumnSpan="2">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -25,23 +26,45 @@
 
         </TextBox>
         <Label Content="USERNAME" HorizontalAlignment="Left" Height="44" Margin="318,230,0,0" VerticalAlignment="Top" Width="177" FontFamily="Rockwell Condensed" FontSize="25"/>
-        <TextBox HorizontalAlignment="Left" Margin="309,354,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="401" Height="60" FontFamily="Sans Serif Collection" UndoLimit="98" VerticalContentAlignment="Bottom" FontSize="30" Grid.ColumnSpan="2">
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="20"/>
-                </Style>
-            </TextBox.Resources>
-
-
-        </TextBox>
         <Label Content="PASSWORD" HorizontalAlignment="Left" Height="44" Margin="318,322,0,0" VerticalAlignment="Top" Width="177" FontFamily="Rockwell Condensed" FontSize="25"/>
-        <Button x:Name="Continue" Content="CONTINUE" HorizontalAlignment="Left" Height="53" Margin="390,441,0,0" VerticalAlignment="Top" Width="240" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="32">
+        <Button x:Name="Continue" Content="CONTINUE" HorizontalAlignment="Left" Height="53" Margin="480,431,0,0" VerticalAlignment="Top" Width="230" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="32" Click="Continue_Click" Grid.ColumnSpan="2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
         </Button>
+        <Button x:Name="backButton" Content="&lt;" HorizontalAlignment="Left" Height="61" Margin="157,638,0,0" VerticalAlignment="Top" Width="74" Foreground="#FFDFDFDF" Background="#FFEE4848" FontFamily="Rockwell Extra Bold" FontSize="50" Click="backButton_Click" Grid.Column="2">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="forgotBtn" Content="Forgot Password?" HorizontalAlignment="Left" Height="29" Margin="330,443,0,0" VerticalAlignment="Top" Width="120" FontFamily="Rockwell" FontSize="14" BorderBrush="{x:Null}" Foreground="#FF4880EE" Background="{x:Null}" Click="forgotBtn_Click"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="309,359,0,0" VerticalAlignment="Top" Width="401" Height="60" FontSize="20" VerticalContentAlignment="Center" Grid.ColumnSpan="2">
+            <PasswordBox.Template>
+                <ControlTemplate>
+                    <Border Background="{TemplateBinding Background}" 
+                        x:Name="Bd" BorderBrush="#FFE6DDDD"
+                        BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="15">
+                        <ScrollViewer x:Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
+                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                        </Trigger>
+                        <Trigger Property="Width" Value="Auto">
+                            <Setter Property="MinWidth" Value="100"/>
+                        </Trigger>
+                        <Trigger Property="Height" Value="Auto">
+                            <Setter Property="MinHeight" Value="20"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </PasswordBox.Template>
+        </PasswordBox>
 
     </Grid>
 </Window>

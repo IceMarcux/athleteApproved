@@ -31,16 +31,16 @@ namespace athleteApproved
 
         private void ownerClick_Click(object sender, RoutedEventArgs e)
         {
-            logInUser objlogInUser = new logInUser();
+            logInOwner objlogInOwner = new logInOwner();
             this.Visibility = Visibility.Hidden;
-            objlogInUser.Show();
+            objlogInOwner.Show();
         }
 
         private void userClick_Click(object sender, RoutedEventArgs e)
         {
-            logInOwner objlogInOwner = new logInOwner();
+            logInUser objlogInUser = new logInUser();
             this.Visibility = Visibility.Hidden;
-            objlogInOwner.Show();
+            objlogInUser.Show();
         }
     }
 }
